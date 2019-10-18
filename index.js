@@ -2,11 +2,9 @@ const { CommandoClient } = require('discord.js-commando');
 const ytdl = require('ytdl-core');
 const path = require('path');
 const YouTube = require('simple-youtube-api');
-const youtube = new YouTube('AIzaSyCsQolsPEBf-7HZOl96iPhPJkpjw87ic1Y');
+const youtube = new YouTube('');
 const Discord = require('discord.js');
 var min,sec,temp;
-//var queue = [];
-//var server = {queue:[]}; 
 
 
 const queue = new Map();
@@ -52,7 +50,7 @@ client.registry
 //^defaults setting
 //music var^
 var restart = false;
-const token  = 'NDE0NjYyMzI5MjE3ODQzMjAx.DZEspA.iLpaIUteyECZ_KMuK_JBtAySkA4';
+const token  = '';
 client.login(token);
 client.on('message', (message) => {
 if(message.channel.type=='dm'){
